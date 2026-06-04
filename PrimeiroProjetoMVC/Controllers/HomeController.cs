@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PrimeiroProjetoMVC.Models;
@@ -12,6 +13,11 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Sobre()
     {
         return View();
     }
